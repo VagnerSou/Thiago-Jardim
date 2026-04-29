@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Brilho Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome para ícones profissionais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+        <div class="overlay"></div>
+
+        <main class="content">
+            <header>
+                <div class="logo-container">
+                    <h1>AUTO <span class="gold">BRILHO</span></h1>
+                    <p class="subtitle">DELIVERY</p>
+                </div>
+                <p class="hero-text">Lavamos o seu carro na comodidade da sua casa!</p>
+            </header>
+
+            <section class="button-grid">
+                <button class="btn-item" onclick="openModal('simples')">
+                    <div class="btn-content">
+                        <i class="fas fa-tint"></i>
+                        <span>Lavagem Simples</span>
+                    </div>
+                </button>
+                <button class="btn-item" onclick="openModal('detalhada')">
+                    <div class="btn-content">
+                        <i class="fas fa-gem"></i>
+                        <span>Lavagem Detalhada</span>
+                    </div>
+                </button>
+                <button class="btn-item" onclick="openModal('domicilio')">
+                    <div class="btn-content">
+                        <i class="fas fa-home"></i>
+                        <span>Atendimento em Domicílio</span>
+                    </div>
+                </button>
+            </section>
+
+            <footer>
+                <p class="agende-txt">Agende o seu horário!</p>
+                <a href="https://wa.me/5517991337889" target="_blank" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> (17) 99133-7889
+                </a>
+                <p class="small-info">Consulte nossos outros serviços</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Estrutura do Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div class="gold-line"></div>
+            <p id="modal-description"></p>
+            <a id="modal-whatsapp" href="#" target="_blank" class="cta-wa">
+                <i class="fab fa-whatsapp"></i> Agendar Agora
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
